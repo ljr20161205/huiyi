@@ -1,0 +1,7 @@
+*.project
+.buildpath
+*.jsdtscope
+.settings/org.eclipse.php.core.prefs
+*.prefs
+.settings/org.eclipse.wst.jsdt.ui.superType.container
+*.name

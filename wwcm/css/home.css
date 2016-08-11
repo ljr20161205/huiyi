@@ -1,0 +1,222 @@
+@CHARSET "UTF-8";
+
+/*
+** 默认图片比例   16 ： 9
+** 最小长宽限制：1200px ： 675px
+*/
+
+html,body{
+	padding:0;
+	margin:0;
+}
+
+#bars_div{
+	position:absolute;
+	width:100vw;
+	height:100vh;
+	min-width:1200px;
+	min-height:675px;
+}
+
+#content_div{
+	position:relative;
+	background-image:url(/huiyi/wwcm/img/background.jpg);
+	background-size:cover;
+	background-repeat:no-repeat;
+	min-width:1200px;
+	min-height:675px;
+	opacity:0;
+	overflow:hidden;
+}
+
+.view_block{
+	position:relative;
+	float:left;
+	width:100%;
+	height:100vh;
+	min-height:675px;
+}
+
+#topbar{
+	z-index:99;
+	position:fixed;
+	left:-0.5%;
+	top:-20%;
+	background-color:#fff;
+	border:3px solid #000000;
+	border-radius:25px;
+}
+
+#topbar p{
+	position:absolute;
+	overflow:hidden;
+	width:100%;
+	height:100%;
+	top:20%;
+	margin:0;
+	padding:0;
+	font-size:1.5rem;
+	text-indent:10%;
+	letter-spacing:0.7rem;
+	font-family:Microsoft YaHei;
+	font-weight:700;
+	color: #000;
+	text-shadow: 0 1px 0 #808080, 0 1px 0 #c9c9c9, 0 2px 0 #bbbbbb, 0 2px 0 #b9b9b9, 0 3px 0 #aaaaaa, 0 3px 1px rgba(0, 0, 0, 0.1), 0 0 4px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 4px rgba(0, 0, 0, 0.2), 0 4px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 15px 15px rgba(0, 0, 0, 0.15);
+}
+
+#rightbar {
+	z-index:99;
+	position:fixed;
+	overflow:hidden;
+	width:15%;
+	height:60%;
+	top:20%;
+}
+
+#rightbar .content{
+	position:absolute;
+	-webkit-transition:all 1s;
+	-moz-transition:all 1s;
+	transition:all 1s;
+	width:100%;
+	height:100%;
+	border-radius:25px;
+}
+
+#rightbar .area{
+	float:left;
+	width:100%;
+	height:14%;
+}
+
+#rightbar .area img{
+	height:100%;
+}
+
+#leftbar{
+	position:relative;
+	/*top:105vh;
+	left:5vw;*/
+	width:100%;
+	height:90%;
+	top:5%;
+	background-image:url(/huiyi/wwcm/img/left_background.png);
+	background-size:100%; 
+  	background-repeat:no-repeat;
+}
+
+#leftbar .content{
+	position:absolute;
+	border-radius:25px;
+	width:60%;
+	height:80%;
+	opacity:0;
+	border:3px solid #000;
+}
+
+
+#bottombar{
+	position:absolute;
+	background-color:#000;
+	width:100%;
+	height:10vh;
+	min-height:5%;
+	opacity:0.8
+}
+
+#svg_div{
+	position:absolute;
+	overflow:hidden;
+}
+
+#cg_b{
+	opacity:0.8;
+}
+
+.project-carousel {
+  z-index:98;
+  position: relative;
+  /*width:100vw;
+  height:50vh;
+  min-width:1200px;
+  min-height:375px;	*/	
+  width:100%;
+  height:70%;
+  padding:17% 0 0 0;	
+  opacity:0;
+}
+
+#view_1{
+	background-image:url(/huiyi/wwcm/img/slick.png); 
+  	background-size:100%; 
+  	background-repeat:no-repeat;
+	opacity:0;
+}
+
+.project-strip {
+  height:60%;
+  background-color:rgba(0,0,0,0.4);
+  border-top:2px solid #fff;
+  border-bottom:2px solid #fff;	
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+}
+
+.project-strip .project {
+  cursor: pointer;
+}
+
+.project-strip img {
+  margin:20% auto;	
+  max-width:100%;
+  width: 30%;
+  min-width:312px;
+  height: auto;
+}
+
+.project-screen {
+  width: 60%;
+  height: 52%;
+  position: absolute;
+  left: 20%;
+  top: 24%;
+  overflow:visible;	
+  
+}
+
+.project-screen .screen-frame {
+  content: " ";
+  left:-1%;
+  top:-2%;		
+  width: 104%;
+  height: 104%;
+  position: absolute;
+  background-image:url(/huiyi/wwcm/img/slick_screen_border.png);
+  background-size:98.8% 100%;  
+  background-repeat: no-repeat;
+  overflow:visible;	
+}
+
+
+.project-screen .project-detail {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: #333;
+}
+
+.project-screen .project {
+  float: left;
+  cursor: move;
+	
+}
+
+.project-screen .project img{
+  width:100%;
+}
+
+
+

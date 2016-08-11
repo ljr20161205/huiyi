@@ -1,0 +1,64 @@
+@CHARSET "UTF-8";
+
+body{
+	padding:0;
+	margin:0;
+}
+
+#content_div{
+	position:relative;
+	background-image:url(/huiyi/img/background.jpg);
+	background-size:100%;
+	background-repeat:no-repeat;
+	overflow:hidden;
+}
+
+#huiyi_logo{	
+}
+
+#cover{
+	background-image:url(/huiyi/img/blackboard.png);
+	background-size:100%;
+	background-repeat:no-repeat;
+	position:absolute;
+	left:10%;
+	-webkit-transform:rotate(10deg);
+	-moz-transform:rotate(10deg);
+	transform:rotate(10deg);
+}
+
+
+#cover img{
+	position: absolute;	
+}
+
+#cover .zoom{
+	-webkit-transition:all 1s;
+	-moz-transition:all 1s;
+	transition:all 1s;
+}
+
+#cover .zoom:hover{
+	width:40%;
+	transform:rotate(0deg);
+	box-shadow:10px 10px 10px 1px #0e0e0e;
+}
+
+#wwcm_cover{
+	width:33%;
+	left:5%;
+	top:8%;
+	-webkit-transform:rotate(4deg);
+	-moz-transform:rotate(4deg);
+	transform:rotate(4deg);
+}
+
+#ywbf_cover{
+	width:33%;
+	left:55%;
+	top:25%;	
+	-webkit-transform:rotate(-20deg);
+	-moz-transform:rotate(-20deg);
+	transform:rotate(-20deg);
+}
+
